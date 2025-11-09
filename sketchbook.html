@@ -62,9 +62,10 @@
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
     background: #000;
+    aspect-ratio: 4 / 3;  /* Enforces 4:3 ratio */
 }
 
 .slide {
@@ -78,7 +79,8 @@
 
 .slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;  /* Crops image to fit without distortion */
     display: block;
 }
 
