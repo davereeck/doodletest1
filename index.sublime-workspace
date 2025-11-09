@@ -1,1 +1,459 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 17386,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					14,
+					1,
+					"",
+					null,
+					"BAAAAHUvAAAAAAAAdi8AAAAAAAAlAAAAL2JhY2tncm91bmQtaW1hZ2VzL2JhY2tncm91bmQtaW1hZ2VzL9AdAAAAAAAA0R0AAAAAAAAlAAAAL2JhY2tncm91bmQtaW1hZ2VzL2JhY2tncm91bmQtaW1hZ2VzL10dAAAAAAAAXh0AAAAAAAAlAAAAL2JhY2tncm91bmQtaW1hZ2VzL2JhY2tncm91bmQtaW1hZ2VzLxUdAAAAAAAAFh0AAAAAAAAlAAAAL2JhY2tncm91bmQtaW1hZ2VzL2JhY2tncm91bmQtaW1hZ2VzLw",
+					"AQAAAAAAAAABAAAA0B0AAAAAAAD1HQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					11,
+					"left_delete",
+					null,
+					"CwAAAH8dAAAAAAAAfx0AAAAAAAABAAAAMX4dAAAAAAAAfh0AAAAAAAABAAAAdH0dAAAAAAAAfR0AAAAAAAABAAAAc3wdAAAAAAAAfB0AAAAAAAABAAAAZXsdAAAAAAAAex0AAAAAAAABAAAAdHodAAAAAAAAeh0AAAAAAAABAAAAZXkdAAAAAAAAeR0AAAAAAAABAAAAbHgdAAAAAAAAeB0AAAAAAAABAAAAZHcdAAAAAAAAdx0AAAAAAAABAAAAb3YdAAAAAAAAdh0AAAAAAAABAAAAb3UdAAAAAAAAdR0AAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAgB0AAAAAAACAHQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					11,
+					"left_delete",
+					null,
+					"CwAAAPUuAAAAAAAA9S4AAAAAAAABAAAAMfQuAAAAAAAA9C4AAAAAAAABAAAAdPMuAAAAAAAA8y4AAAAAAAABAAAAc/IuAAAAAAAA8i4AAAAAAAABAAAAZfEuAAAAAAAA8S4AAAAAAAABAAAAdPAuAAAAAAAA8C4AAAAAAAABAAAAZe8uAAAAAAAA7y4AAAAAAAABAAAAbO4uAAAAAAAA7i4AAAAAAAABAAAAZO0uAAAAAAAA7S4AAAAAAAABAAAAb+wuAAAAAAAA7C4AAAAAAAABAAAAb+suAAAAAAAA6y4AAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAA9i4AAAAAAAD2LgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "/dood"
+					},
+					"BQAAAOsuAAAAAAAA7C4AAAAAAAAAAAAA7C4AAAAAAADtLgAAAAAAAAAAAADtLgAAAAAAAO4uAAAAAAAAAAAAAO4uAAAAAAAA7y4AAAAAAAAAAAAA7y4AAAAAAADwLgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6y4AAAAAAADrLgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "letet="
+					},
+					"BgAAAPAuAAAAAAAA8S4AAAAAAAAAAAAA8S4AAAAAAADyLgAAAAAAAAAAAADyLgAAAAAAAPMuAAAAAAAAAAAAAPMuAAAAAAAA9C4AAAAAAAAAAAAA9C4AAAAAAAD1LgAAAAAAAAAAAAD1LgAAAAAAAPYuAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8C4AAAAAAADwLgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					2,
+					"left_delete",
+					null,
+					"AgAAAPUuAAAAAAAA9S4AAAAAAAABAAAAPfQuAAAAAAAA9C4AAAAAAAABAAAAdA",
+					"AQAAAAAAAAABAAAA9i4AAAAAAAD2LgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert",
+					{
+						"characters": "st1"
+					},
+					"AwAAAPQuAAAAAAAA9S4AAAAAAAAAAAAA9S4AAAAAAAD2LgAAAAAAAAAAAAD2LgAAAAAAAPcuAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9C4AAAAAAAD0LgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "/doodlete"
+					},
+					"CQAAAHUdAAAAAAAAdh0AAAAAAAAAAAAAdh0AAAAAAAB3HQAAAAAAAAAAAAB3HQAAAAAAAHgdAAAAAAAAAAAAAHgdAAAAAAAAeR0AAAAAAAAAAAAAeR0AAAAAAAB6HQAAAAAAAAAAAAB6HQAAAAAAAHsdAAAAAAAAAAAAAHsdAAAAAAAAfB0AAAAAAAAAAAAAfB0AAAAAAAB9HQAAAAAAAAAAAAB9HQAAAAAAAH4dAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdR0AAAAAAAB1HQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": "st1"
+					},
+					"AwAAAH4dAAAAAAAAfx0AAAAAAAAAAAAAfx0AAAAAAACAHQAAAAAAAAAAAACAHQAAAAAAAIEdAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfh0AAAAAAAB+HQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "milking-strawberries.html",
+			"settings":
+			{
+				"buffer_size": 16786,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 34 files for \"/background\\-images/background\\-images/\" (regex)\n\nC:\\Users\\daver\\Documents\\GitHub\\doodletest2\\doodle_export1\\index.html:\n   61  \t<style>\n   62  /* * FIX #1: Added the missing 'background-images' directory to the path\n   63:  * actual path uploads/background-images/background-images/80129799.jpg\n   64:  * in text     uploads/background-images/background-images/80129799.jpg\n   65   */\n   66: .wsite-background {background-image: url(\"doodletest1/uploads/background-images/background-images/80129799.jpg\") !important;background-repeat: no-repeat !important;background-position: 50.00% 55.04% !important;background-size: 100% !important;background-color: transparent !important;}\n   67  body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}\n   68  \t</style>\n   ..\n  137  \t\t\t\t<div class=\"wsite-elements wsite-not-footer wsite-header-elements\">\n  138  \t\t\t\t\t<div class=\"wsite-section-wrap\">\n  139: \t\t\t\t\t\t<div class=\"wsite-section wsite-header-section wsite-section-bg-image\" style=\"vertical-align: middle;height: 380px;background-image: url('doodletest1/uploads/background-images/background-images/80129799.jpg');background-repeat: no-repeat;background-position: 50.00% 55.04%;background-size: 100%;background-color: transparent;background-size: cover;\">\n  140  \t\t\t\t\t\t\t<div class=\"wsite-section-content\">\n  141  \t\t\t\t\t\t\t\t<div id=\"banner\">\n\n4 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 1467,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1"
+	],
+	"file_history":
+	[
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/index.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/inner-workings.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/insectoid.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/jumbled.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/milking-strawberries.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/new-work.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/night-sky.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/out-the-window.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/red-rain.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/rolling.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/sketchbook.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/string-theory.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/sunshine-thoughts.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/the-secret-garden.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/wop-10.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/wop-9.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/about.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/blue-yonder.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/bugaroo.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/bugpods.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/cellular.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/city-lights.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/crowned.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/extricate.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/formations.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/gallery.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/homage-to-miro.html",
+		"/C/Users/daver/Documents/GitHub/doodletest2/doodle_export1/cleanup_html.py",
+		"/C/Users/daver/pnamailexport/PNAEmailOutput.csv",
+		"/C/Users/daver/pnamailexport/Fw_ PNA Community Woodshop_ Intro to Woodworking Confirmation_1.eml",
+		"/C/Users/daver/Documents/Brooks_Pm",
+		"/C/Users/daver/Documents/Brooks",
+		"/C/Users/daver/Documents/Brooks-After",
+		"/C/Users/daver/Documents/Materialize.txt",
+		"/C/Users/daver/Downloads/Libra_2024-01-15.csv"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"<open folders>,<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"80129799.jpg",
+			"/background\\-images/background\\-images/",
+			"background",
+			"6\\\\/3\\\\/8\\\\/2\\\\/63821241",
+			"uploads/6/3/8/2/63821241/",
+			"80129799",
+			"url",
+			"uploads",
+			"/uploads",
+			"80129799.jpg",
+			"80129799.jpg&quot",
+			"<script src='files/templateArtifacts.js?1740603533'>",
+			"<script src='files/templateArtifacts.js?1740603533'></script>",
+			"129236209278723622",
+			"id=\"pg129236209278723622"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"/",
+			"",
+			"uploads/"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12044,
+								12056
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3671.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "milking-strawberries.html",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 16786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1467,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										270,
+										307
+									],
+									[
+										349,
+										386
+									],
+									[
+										478,
+										515
+									],
+									[
+										1169,
+										1206
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 584.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
