@@ -59,13 +59,13 @@
 .blog-header h2 a {}
 #wsite-content h2.wsite-product-title {}
 .wsite-product .wsite-product-price a {}
-/* Slideshow Container */
+/* Slideshow Container - matches Weebly sizing */
 .slideshow-container {
     position: relative;
-    max-width: 400px;
+    max-width: 960px;  /* Standard content width */
+    width: 100%;
     margin: 0 auto;
     background: #000;
-    aspect-ratio: 4 / 3;  /* Enforces 4:3 ratio */
 }
 
 .slide {
@@ -79,8 +79,7 @@
 
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Crops image to fit without distortion */
+    height: auto;
     display: block;
 }
 
