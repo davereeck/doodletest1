@@ -23,9 +23,8 @@
         transition: 0.3s;
     }
     
-    /* Mobile menu wrapper - FORCE visibility */
+    /* Mobile menu wrapper - Hidden by default, slides in when open */
     .navmobile-wrapper {
-        display: block !important;
         position: fixed !important;
         top: 0 !important;
         right: -100% !important;
@@ -36,44 +35,35 @@
         overflow-y: auto !important;
         transition: right 0.3s ease !important;
         padding-top: 60px !important;
-        visibility: visible !important;
-        opacity: 1 !important;
     }
     
     .navmobile-wrapper.open {
         right: 0 !important;
     }
     
-    /* Mobile menu items - FORCE visibility and colors */
+    /* Mobile menu items - Only force visibility of content, not container */
     #navmobile {
         display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
     }
     
     #navmobile ul {
         list-style: none !important;
         padding: 0 !important;
         margin: 0 !important;
-        display: block !important;
-        visibility: visible !important;
     }
     
     #navmobile .wsite-menu-item-wrap {
         display: block !important;
-        visibility: visible !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
     
     #navmobile .wsite-menu-item {
         display: block !important;
-        visibility: visible !important;
         padding: 15px 20px !important;
         color: #ffffff !important;
         text-decoration: none !important;
         font-size: 16px !important;
         transition: background-color 0.3s !important;
-        opacity: 1 !important;
         font-family: "Raleway", Arial, sans-serif !important;
     }
     
