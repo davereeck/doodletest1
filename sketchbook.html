@@ -61,17 +61,22 @@
 #wsite-content h2.wsite-product-title {}
 .wsite-product .wsite-product-price a {}
 /* Slideshow Container - matches Weebly sizing */
+/* Slideshow Container */
 .slideshow-container {
     position: relative;
-    max-width: 960px;  /* Standard content width */
-    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     background: #000;
+    aspect-ratio: 4 / 3;  /* Enforces 4:3 ratio */
 }
 
 .slide {
     display: none;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .slide.active {
@@ -80,7 +85,8 @@
 
 .slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;  /* Crops image to fill 4:3 without distortion */
     display: block;
 }
 
