@@ -88,34 +88,57 @@ def create_mobile_menu_files(output_dir):
         right: 0 !important;
     }
     
-    /* Mobile menu items - Only force visibility of content, not container */
-    #navmobile {
+    /* Mobile menu container - force visibility */
+    .navmobile-wrapper #navmobile {
         display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
-    #navmobile ul {
+    .navmobile-wrapper #navmobile .nav {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .navmobile-wrapper #navmobile ul,
+    .navmobile-wrapper #navmobile .wsite-menu-default {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         list-style: none !important;
         padding: 0 !important;
         margin: 0 !important;
     }
     
-    #navmobile .wsite-menu-item-wrap {
+    .navmobile-wrapper #navmobile .wsite-menu-item-wrap,
+    .navmobile-wrapper #navmobile li {
         display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        width: 100% !important;
+        height: auto !important;
     }
     
-    #navmobile .wsite-menu-item {
+    .navmobile-wrapper #navmobile .wsite-menu-item,
+    .navmobile-wrapper #navmobile a {
         display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         padding: 15px 20px !important;
         color: #ffffff !important;
         text-decoration: none !important;
         font-size: 16px !important;
+        line-height: 1.5 !important;
         transition: background-color 0.3s !important;
         font-family: "Raleway", Arial, sans-serif !important;
+        background-color: transparent !important;
     }
     
-    #navmobile .wsite-menu-item:hover,
-    #navmobile #active .wsite-menu-item {
+    .navmobile-wrapper #navmobile .wsite-menu-item:hover,
+    .navmobile-wrapper #navmobile #active .wsite-menu-item,
+    .navmobile-wrapper #navmobile a:hover {
         background-color: rgba(251, 214, 52, 0.2) !important;
         color: #fbd634 !important;
     }
