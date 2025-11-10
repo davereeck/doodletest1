@@ -65,16 +65,13 @@
     position: relative;
     margin: 0 auto;
     background: #000;
-    aspect-ratio: 4 / 3;  /* Enforces 4:3 ratio */
+    overflow: hidden;
 }
 
 .slide {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    text-align: center;  /* centers portrait images horizontally */
 }
 
 .slide.active {
@@ -83,9 +80,10 @@
 
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Crops image to fill 4:3 without distortion */
-    display: block;
+    height: auto;        /* keep full aspect ratio */
+    object-fit: contain; /* ensure no cropping */
+    display: inline-block;
+    background-color: #000;
 }
 
 .prev, .next {
