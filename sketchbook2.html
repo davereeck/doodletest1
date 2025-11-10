@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sketchbook - Swiftdoodles</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Lora:wght@400;700&family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1762544893" title="wsite-theme-css" />
+<link rel="stylesheet" type="text/css" href="files/mobile-menu.css" />
+
+<style type='text/css'>
+/* Existing typography omitted for brevity */
+
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #000;
+    aspect-ratio: 4 / 3;  /* Enforces 4:3 ratio */
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* FIXED section: prevent images from appearing too large */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* <-- changed from cover to contain */
+    background-color: #000; /* matches old slideshow background */
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+    background-color: #dab844;
+}
+
+.fade {
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+</style>
+
+<style>
+.wsite-background {background-image: url("/uploads/background-images/1794352840.jpg") !important;background-repeat: no-repeat !important;background-position: 50.00% 73.70% !important;background-size: 100% !important;background-color: transparent !important;}
+body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="no-header wsite-page-sketchbook full-width-on wsite-theme-dark">
+<div class="body-wrap">
+
+<!-- header and nav omitted for brevity -->
+
+<div id="content-wrapper">
+  <div id="wsite-content" class="wsite-elements wsite-not-footer">
+    <h2 class="wsite-content-title" style="text-align:center;"><font color="#dab844">Sketchbook</font></h2>
+    <div class="paragraph" style="text-align:center;"><font color="#d5d5d5">Ideas, doodles, and inspiration</font></div>
+
+    <div style="height:20px;overflow:hidden"></div>
+
+    <div class="slideshow-container" id="slideshow">
+        <div style="text-align:center; padding:40px; color:#dab844;">Loading slideshow...</div>
+    </div>
+    <div class="dots-container" id="dots-container"></div>
+
+    <script>
+    const images = [
+        {url: "uploads/9401663.jpg"},
+        {url: "uploads/2501964.jpg"},
+        {url: "uploads/600454.jpg"},
+        {url: "uploads/6501739.jpg"},
+        {url: "uploads/4327401.jpg"},
+        {url: "uploads/4676918.jpg"},
+        {url: "uploads/4234426.jpg"},
+        {url: "uploads/5967504.jpg"},
+        {url: "uploads/3517172.jpg"},
+        {url: "uploads/5872176.jpg"},
+        {url: "uploads/3845083.jpg"},
+        {url: "uploads/8088048.jpg"},
+        {url: "uploads/6276015.jpg"},
+        {url: "uploads/7422309.jpg"},
+        {url: "uploads/3635124.jpg"},
+        {url: "uploads/2918742.jpg"}
+    ];
+
+    let currentSlide = 0;
+    let autoplayInterval;
+
+    function initSlideshow() {
+        const container = document.getElementById('slideshow');
+        const dotsContainer = document.getElementById('dots-container');
+        container.innerHTML = '';
+
+        images.forEach((img, i) => {
+            const slide = document.createElement('div');
+            slide.className = 'slide fade';
+            if (i === 0) slide.classList.add('active');
+
+            const imgEl = document.createElement('img');
+            imgEl.src = img.url;
+            imgEl.alt = `Slide ${i + 1}`;
+            slide.appendChild(imgEl);
+            container.appendChild(slide);
+
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (i === 0) dot.classList.add('active');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        });
+
+        const prevBtn = document.createElement('a');
+        prevBtn.className = 'prev';
+        prevBtn.innerHTML = '❮';
+        prevBtn.onclick = () => changeSlide(-1);
+
+        const nextBtn = document.createElement('a');
+        nextBtn.className = 'next';
+        nextBtn.innerHTML = '❯';
+        nextBtn.onclick = () => changeSlide(1);
+
+        container.appendChild(prevBtn);
+        container.appendChild(nextBtn);
+        startAutoplay();
+    }
+
+    function changeSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+
+        currentSlide += direction;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    function goToSlide(index) {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(() => changeSlide(1), 5000);
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+        if (e.key === 'ArrowRight') changeSlide(1);
+    });
+
+    window.addEventListener('load', initSlideshow);
+    </script>
+
+    <div style="height:20px;overflow:hidden"></div>
+    <div class="paragraph" style="text-align:center;">
+        <font color="#dab844">&copy; Marcie Swift 2015</font>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
