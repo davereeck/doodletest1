@@ -1,68 +1,85 @@
-/* Mobile Menu Styles */
+/* Mobile Menu Styles - Override Weebly CSS */
 @media screen and (max-width: 767px) {
     /* Hide desktop menu on mobile */
     #navigation {
-        display: none;
+        display: none !important;
     }
     
     /* Show hamburger menu on mobile */
     .nav-trigger {
-        display: block;
+        display: block !important;
         cursor: pointer;
         padding: 15px;
         z-index: 1000;
+        position: relative;
     }
     
     .nav-trigger .mobile {
-        display: block;
+        display: block !important;
         width: 25px;
         height: 3px;
-        background-color: #fbd634;
+        background-color: #fbd634 !important;
         margin: 5px 0;
         transition: 0.3s;
     }
     
-    /* Mobile menu wrapper */
+    /* Mobile menu wrapper - FORCE visibility */
     .navmobile-wrapper {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 250px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.95);
-        z-index: 999;
-        overflow-y: auto;
-        transition: right 0.3s ease;
-        padding-top: 60px;
+        display: block !important;
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        width: 250px !important;
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.95) !important;
+        z-index: 999 !important;
+        overflow-y: auto !important;
+        transition: right 0.3s ease !important;
+        padding-top: 60px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
     .navmobile-wrapper.open {
-        right: 0;
+        right: 0 !important;
     }
     
-    /* Mobile menu items */
+    /* Mobile menu items - FORCE visibility and colors */
+    #navmobile {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
     #navmobile ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     #navmobile .wsite-menu-item-wrap {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block !important;
+        visibility: visible !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
     
     #navmobile .wsite-menu-item {
-        display: block;
-        padding: 15px 20px;
+        display: block !important;
+        visibility: visible !important;
+        padding: 15px 20px !important;
         color: #ffffff !important;
-        text-decoration: none;
-        font-size: 16px;
-        transition: background-color 0.3s;
+        text-decoration: none !important;
+        font-size: 16px !important;
+        transition: background-color 0.3s !important;
+        opacity: 1 !important;
+        font-family: "Raleway", Arial, sans-serif !important;
     }
     
     #navmobile .wsite-menu-item:hover,
     #navmobile #active .wsite-menu-item {
-        background-color: rgba(251, 214, 52, 0.2);
+        background-color: rgba(251, 214, 52, 0.2) !important;
         color: #fbd634 !important;
     }
     
@@ -82,14 +99,14 @@
 /* Desktop: hide mobile menu and hamburger */
 @media screen and (min-width: 768px) {
     .navmobile-wrapper {
-        display: none;
+        display: none !important;
     }
     
     .nav-trigger {
-        display: none;
+        display: none !important;
     }
     
     #navigation {
-        display: block;
+        display: block !important;
     }
 }
