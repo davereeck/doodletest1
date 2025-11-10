@@ -1,0 +1,95 @@
+/* Mobile Menu Styles */
+@media screen and (max-width: 767px) {
+    /* Hide desktop menu on mobile */
+    #navigation {
+        display: none;
+    }
+    
+    /* Show hamburger menu on mobile */
+    .nav-trigger {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        z-index: 1000;
+    }
+    
+    .nav-trigger .mobile {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fbd634;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+    
+    /* Mobile menu wrapper */
+    .navmobile-wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 999;
+        overflow-y: auto;
+        transition: right 0.3s ease;
+        padding-top: 60px;
+    }
+    
+    .navmobile-wrapper.open {
+        right: 0;
+    }
+    
+    /* Mobile menu items */
+    #navmobile ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #navmobile .wsite-menu-item-wrap {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    #navmobile .wsite-menu-item {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff !important;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    #navmobile .wsite-menu-item:hover,
+    #navmobile #active .wsite-menu-item {
+        background-color: rgba(251, 214, 52, 0.2);
+        color: #fbd634 !important;
+    }
+    
+    /* Overlay when menu is open */
+    body.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+}
+
+/* Desktop: hide mobile menu and hamburger */
+@media screen and (min-width: 768px) {
+    .navmobile-wrapper {
+        display: none;
+    }
+    
+    .nav-trigger {
+        display: none;
+    }
+    
+    #navigation {
+        display: block;
+    }
+}
